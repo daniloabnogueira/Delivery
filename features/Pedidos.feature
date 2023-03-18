@@ -24,4 +24,8 @@ Feature: Fazer pedido
         Given estou na pagina de pedidos
         When escolho a opção " finalizar pedido"
         Then aparece uma mensagem para selecionar forma de pagamento
+    Scenario: Cartão não reconhecido
+        Given estou na pagina de pedidos
+        And preencho dados do Cartão
+        Then aparece uma mensagem cartão não reconhecido 
 
