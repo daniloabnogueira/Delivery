@@ -17,7 +17,11 @@ Feature: Fazer pedido
         Then retorno para tela de restaurantes
     Scenario: Finalizar um pedido com sucesso
         Given estou na pagina de pedidos
-        And seleciono a forma de pagamento
+        And escolho a forma de pagamento 
         When escolho a opção "finalizar pedido"
         Then aparece uma mensagem de confirmação do pedido
+     Scenario : Finalizar um pedido sem forma de pagamento
+        Given estou na pagina de pedidos
+        When escolho a opção " finalizar pedido"
+        Then aparece uma mensagem para selecionar forma de pagamento
 
