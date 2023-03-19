@@ -33,4 +33,9 @@ Feature: Fazer pedido
         When escolho a opção "remover"
         Then aparece uma mensagem de confirmação de remoção
         And ao confirma a exclusão o item selecionado deve ser excluido 
+     Scenario: Adicionar novo item
+        Given estou na pagina de pedidos
+        When escolho ver cardápio
+        Then retorno para página cardápio
+
 
