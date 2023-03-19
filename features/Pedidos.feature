@@ -27,5 +27,6 @@ Feature: Fazer pedido
     Scenario: Cartão não reconhecido
         Given estou na pagina de pedidos
         And preencho dados do Cartão
-        Then aparece uma mensagem cartão não reconhecido 
+        Then aparece uma mensagem cartão não reconhecido
+        And confirme opção finalizar pedido fica desativada 
 
