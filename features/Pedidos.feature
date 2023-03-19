@@ -28,4 +28,9 @@ Feature: Fazer pedido
         Given estou na pagina de pedidos
         And preencho dados do Cartão
         Then aparece uma mensagem cartão não reconhecido 
+    Scenario: Remover item 
+        Given estou na pagina de pedidos
+        When escolho a opção "remover"
+        Then aparece uma mensagem de confirmação de remoção
+        And ao confirma a exclusão o item selecionado deve ser excluido 
 
