@@ -35,7 +35,8 @@ Feature: Fazer pedido
         And ao confirma a exclusão o item selecionado deve ser excluido 
      Scenario: Adicionar novo item
         Given estou na pagina de pedidos
-        When escolho ver cardápio
+        When escolho a opção ver cardápio
         Then retorno para página cardápio
+        And seleciono novo item desejado
 
 
