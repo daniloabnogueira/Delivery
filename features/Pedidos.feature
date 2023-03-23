@@ -43,6 +43,7 @@ Feature: Fazer pedido
         Given estou na pagina de pedidos 
         When escolho a opção remover todos
         Then aparece uma mensagem para confirma a remoção
+        And ao confirmar a exlusão  retorna a tela de cardápio
         
 
 
