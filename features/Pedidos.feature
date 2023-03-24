@@ -39,5 +39,11 @@ Feature: Fazer pedido
         When escolho a opção ver cardápio
         Then retorno para página cardápio
         And seleciono novo item desejado
+    Scenario: Remover todos os itens
+        Given estou na pagina de pedidos 
+        When escolho a opção remover todos
+        Then aparece uma mensagem para confirma a remoção
+        
+
 
 
