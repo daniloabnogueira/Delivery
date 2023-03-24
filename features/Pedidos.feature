@@ -44,6 +44,11 @@ Feature: Fazer pedido
         When escolho a opção remover todos
         Then aparece uma mensagem para confirma a remoção
         And ao confirmar a exlusão  retorna a tela de cardápio
+    Scenario: Editar item
+        Given estou na página de pedidos
+        When escolho a opção editar item
+        Then aparece a lista de opções de "customização" do meu item para selecão
+
         
 
 
